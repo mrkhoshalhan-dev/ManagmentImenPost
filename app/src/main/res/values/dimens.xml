@@ -1,0 +1,34 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--    margin values-->
+    <dimen name="activity_total_margin8">8dp</dimen>
+
+    <dimen name="standard_margin_views4">4dp</dimen>
+    <dimen name="standard_margin_views8">8dp</dimen>
+    <dimen name="standard_margin_views12">12dp</dimen>
+    <dimen name="standard_margin_views16">16dp</dimen>
+    <dimen name="standard_margin_views32">32dp</dimen>
+    <dimen name="standard_margin_views48">48dp</dimen>
+    <dimen name="standard_margin_views55">55dp</dimen>
+    <dimen name="standard_margin_views64">64dp</dimen>
+    <!--    End Part Margin-->
+
+    <!--    Radius-->
+    <dimen name="radius_22">22dp</dimen>
+    <dimen name="radius_35">35dp</dimen>
+    <!--    End Radius-->
+
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+
+    <dimen name="height_button">32dp</dimen>
+    <dimen name="with_button">128dp</dimen>
+    <dimen name="height_edit_text">35dp</dimen>
+
+    <dimen name="standard_text_size_date_opinionAct">12sp</dimen>
+
+
+
+
+</resources>

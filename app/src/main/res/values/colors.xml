@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2FD17C</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="background_fragment">#EFFFFB</color>
+
+    <!--    This is color from this WebSite:
+    https://www.materialui.co/colors-->
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="Red">#f44336</color>
+    <color name="Red_insta">#FC2417</color>
+    <color name="Blue">#2196F3</color>
+    <color name="Blue200">#90CAF9</color>
+    <color name="YellowMaterial200">#FFE082</color>
+    <color name="GreenMaterial300">#A5D6A7</color>
+    <color name="Green">#4CAF50</color>
+    <color name="Yellow">#FFEB3B</color>
+    <color name="Orange">#FF9800</color>
+    <color name="Grey">#9E9E9E</color>
+    <color name="Grey200">#F8F7F7</color>
+
+</resources>

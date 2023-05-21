@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.EditTariffActivity">
+
+
+    <TextView
+        android:id="@+id/txtView_freight_editTariffAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin_views64"
+        android:layout_marginRight="@dimen/standard_margin_views16"
+        android:text="کرایه (وزن بر کیلومتر): "
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtText_freight_editTariffAct"
+        style="@style/EditText_Style_SingleLine"
+        android:layout_width="90dp"
+        android:layout_height="26dp"
+        android:layout_marginRight="140dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@id/txtView_freight_editTariffAct"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtView_freight_editTariffAct" />
+
+    <TextView
+        android:id="@+id/txtView_toman_freight_editTariffAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin_views64"
+        android:layout_marginRight="@dimen/standard_margin_views16"
+        android:text="تومان"
+        android:textSize="14sp"
+        app:layout_constraintRight_toLeftOf="@+id/edtText_freight_editTariffAct"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView_khadamat_editTariffAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_margin_views16"
+        android:text="خدمات: "
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtView_freight_editTariffAct" />
+
+    <EditText
+        android:id="@+id/edtText_khadamat_editTariffAct"
+        style="@style/EditText_Style_SingleLine"
+        android:layout_width="90dp"
+        android:layout_height="26dp"
+        android:layout_marginRight="140dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@id/txtView_khadamat_editTariffAct"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtView_khadamat_editTariffAct" />
+
+    <TextView
+        android:id="@+id/txtView_sokht_editTariffAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_margin_views16"
+        android:text="سوخت: "
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtView_khadamat_editTariffAct" />
+
+    <EditText
+        android:id="@+id/edtText_sokht_editTariffAct"
+        style="@style/EditText_Style_SingleLine"
+        android:layout_width="90dp"
+        android:layout_height="26dp"
+        android:layout_marginRight="140dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@id/txtView_sokht_editTariffAct"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtView_sokht_editTariffAct" />
+
+    <TextView
+        android:id="@+id/txtView_bastebandi_editTariffAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_margin_views16"
+        android:text="بسته بندی: "
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtView_sokht_editTariffAct" />
+
+    <EditText
+        android:id="@+id/edtText_bastebandi_editTariffAct"
+        style="@style/EditText_Style_SingleLine"
+        android:layout_width="90dp"
+        android:layout_height="26dp"
+        android:layout_marginRight="140dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@id/txtView_bastebandi_editTariffAct"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtView_bastebandi_editTariffAct" />
+
+    <TextView
+        android:id="@+id/txtView_bimeh_editTariffAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_margin_views16"
+        android:text="بیمه: "
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtView_bastebandi_editTariffAct" />
+
+    <EditText
+        android:id="@+id/edtText_bimeh_editTariffAct"
+        style="@style/EditText_Style_SingleLine"
+        android:layout_width="90dp"
+        android:layout_height="26dp"
+        android:layout_marginRight="140dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@id/txtView_bimeh_editTariffAct"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtView_bimeh_editTariffAct" />
+
+    <TextView
+        android:id="@+id/txtView_arzeshafzodeh_editTariffAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_margin_views16"
+        android:text="ارزش افزوده: "
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtView_bimeh_editTariffAct" />
+
+    <EditText
+        android:id="@+id/edtText_arzeshafzodeh_editTariffAct"
+        style="@style/EditText_Style_SingleLine"
+        android:layout_width="90dp"
+        android:layout_height="26dp"
+        android:layout_marginRight="140dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@id/txtView_arzeshafzodeh_editTariffAct"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtView_arzeshafzodeh_editTariffAct" />
+
+    <Button
+        android:id="@+id/btn_save_editTariffAct"
+        style="@style/Button_Style"
+        android:layout_width="110dp"
+        android:layout_height="@dimen/standard_margin_views32"
+        android:text="ذخیره"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtView_arzeshafzodeh_editTariffAct" />
+</androidx.constraintlayout.widget.ConstraintLayout>

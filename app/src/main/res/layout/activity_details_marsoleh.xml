@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailsMarsolehActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_sender_detailsAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_margin_views8"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtView_sender_title_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin_views8"
+                android:text="فرستنده"
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_title_name_sender_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_sender_title_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_name_sender_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_name_sender_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_sender_title_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_address_sender_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="آدرس: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_name_sender_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_address_sender_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_address_sender_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_name_sender_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_pelak_sender_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="پلاک: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_address_sender_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_pelak_sender_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_pelak_sender_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_address_sender_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_flor_sender_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="طبقه: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_pelak_sender_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_address_sender_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_flor_sender_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_flor_sender_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_address_sender_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_post_sender_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="کدپستی: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_pelak_sender_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_post_sender_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_post_sender_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_pelak_sender_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_phone_sender_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="تلفن: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_post_sender_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_pelak_sender_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_phone_sender_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_phone_sender_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_pelak_sender_detailsAct" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_margin_views8"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_phone_sender_detailsAct" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_receiver_detailsAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_margin_views8"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintTop_toBottomOf="@id/card_sender_detailsAct">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtView_receiver_title_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin_views8"
+                android:text="گیرنده"
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_title_name_receiver_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_receiver_title_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_name_receiver_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_name_receiver_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_receiver_title_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_address_receiver_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="آدرس: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_name_receiver_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_address_receiver_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_address_receiver_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_name_receiver_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_pelak_receiver_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="پلاک: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_address_receiver_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_pelak_receiver_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_pelak_receiver_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_address_receiver_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_flor_receiver_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="طبقه: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_pelak_receiver_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_address_receiver_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_flor_receiver_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_flor_receiver_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_address_receiver_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_post_receiver_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="کدپستی: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_pelak_receiver_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_post_receiver_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_post_receiver_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_pelak_receiver_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_phone_receiver_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="تلفن: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_post_receiver_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_pelak_receiver_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_phone_receiver_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_phone_receiver_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_pelak_receiver_detailsAct" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_margin_views8"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_phone_receiver_detailsAct" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_expense_detailsAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_margin_views8"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintTop_toBottomOf="@id/card_receiver_detailsAct">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtView_expense_title_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin_views8"
+                android:text="هزینه"
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_title_freight_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="کرایه حمل: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_expense_title_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_freight_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_freight_expense_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_expense_title_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_khadamat_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="خدمات: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_freight_expense_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_expense_title_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_khadamat_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_khadamat_expense_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_expense_title_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_sokht_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="سوخت: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_khadamat_expense_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_sokht_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_sokht_expense_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_khadamat_expense_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_basteBbandi_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="بسته بندی: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_sokht_expense_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_khadamat_expense_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_basteBandi_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_basteBbandi_expense_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_khadamat_expense_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_bimeh_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="بیمه: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_sokht_expense_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_bimeh_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_bimeh_expense_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_sokht_expense_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_arzeshAfzodeh_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="ارزش افزوده: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_bimeh_expense_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_sokht_expense_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_arzeshAfzodeh_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_arzeshAfzodeh_expense_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_sokht_expense_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_total_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="جمع کل: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_arzeshAfzodeh_expense_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_total_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_total_expense_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_arzeshAfzodeh_expense_detailsAct" />
+            <TextView
+                android:id="@+id/txtView_toman_total_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text=" تومان "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_total_expense_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_arzeshAfzodeh_expense_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_pay_date_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="تاریخ پرداخت: "
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_total_expense_detailsAct" />
+
+            <TextView
+                android:id="@+id/txtView_pay_date_expense_detailsAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views4"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:text="نام: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_pay_date_expense_detailsAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_total_expense_detailsAct" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_margin_views8"
+                app:layout_constraintTop_toBottomOf="@id/txtView_pay_date_expense_detailsAct" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

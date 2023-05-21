@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.SituationPaymentActivity">
+
+    <TextView
+        android:id="@+id/txtV_input_from_paidAct"
+        style="@style/EditText_Style_SingleLine"
+        android:layout_width="95dp"
+        android:layout_height="@dimen/standard_margin_views32"
+        android:layout_marginTop="@dimen/standard_margin_views16"
+        android:layout_marginRight="@dimen/standard_margin_views8"
+        android:hint="انتخاب تاریخ از"
+        android:padding="@dimen/standard_margin_views4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_to_paidAct"
+        style="@style/EditText_Style_SingleLine"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/standard_margin_views32"
+        android:layout_marginRight="@dimen/standard_margin_views4"
+        android:padding="@dimen/standard_margin_views4"
+        android:text=" الی "
+        app:layout_constraintBottom_toBottomOf="@id/txtV_input_from_paidAct"
+        app:layout_constraintRight_toLeftOf="@id/txtV_input_from_paidAct"
+        app:layout_constraintTop_toTopOf="@id/txtV_input_from_paidAct" />
+
+    <TextView
+        android:id="@+id/txtV_input_to_paidAct"
+        style="@style/EditText_Style_SingleLine"
+        android:layout_width="95dp"
+        android:layout_height="@dimen/standard_margin_views32"
+        android:layout_marginRight="@dimen/standard_margin_views4"
+        android:hint=" تا تاریخ "
+        android:padding="@dimen/standard_margin_views4"
+        app:layout_constraintBottom_toBottomOf="@id/txt_to_paidAct"
+        app:layout_constraintRight_toLeftOf="@id/txt_to_paidAct"
+        app:layout_constraintTop_toTopOf="@id/txt_to_paidAct" />
+
+    <Button
+        android:id="@+id/btn_search_paidAct"
+        style="@style/Button_Style"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:text="جستجو"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtV_input_from_paidAct" />
+
+    <TextView
+        android:id="@+id/txtView_title_sum_isPaid_paidAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin_views8"
+        android:layout_marginRight="@dimen/standard_margin_views8"
+        android:text="جمع پرداخت شده ها:"
+        android:textColor="@color/Black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_search_paidAct" />
+
+    <TextView
+        android:id="@+id/txtView_sum_isPaid_paidAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin_views8"
+        android:layout_marginRight="@dimen/standard_margin_views8"
+        android:text="0"
+        android:textColor="@color/White"
+        app:layout_constraintRight_toLeftOf="@id/txtView_title_sum_isPaid_paidAct"
+        app:layout_constraintTop_toBottomOf="@id/btn_search_paidAct" />
+    <TextView
+        android:id="@+id/txtView_rial_sum_isPaid_paidAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin_views8"
+        android:layout_marginRight="@dimen/standard_margin_views8"
+        android:text=" تومان "
+        android:textColor="@color/White"
+        app:layout_constraintRight_toLeftOf="@id/txtView_sum_isPaid_paidAct"
+        app:layout_constraintTop_toBottomOf="@id/btn_search_paidAct" />
+    <TextView
+        android:id="@+id/txtView_title_sum_isntPaid_paidAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin_views8"
+        android:layout_marginRight="@dimen/standard_margin_views8"
+        android:text="جمع پرداخت نشده ها:"
+        android:textColor="@color/Black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtView_title_sum_isPaid_paidAct" />
+
+    <TextView
+        android:id="@+id/txtView_sum_isntPaid_paidAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin_views8"
+        android:layout_marginRight="@dimen/standard_margin_views8"
+        android:text="0"
+        android:textColor="@color/Red"
+        app:layout_constraintRight_toLeftOf="@id/txtView_title_sum_isntPaid_paidAct"
+        app:layout_constraintTop_toBottomOf="@id/txtView_title_sum_isPaid_paidAct" />
+    <TextView
+        android:id="@+id/txtView_rial_sum_isntPaid_paidAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin_views8"
+        android:layout_marginRight="@dimen/standard_margin_views8"
+        android:text=" تومان "
+        android:textColor="@color/Red"
+        app:layout_constraintRight_toLeftOf="@id/txtView_sum_isntPaid_paidAct"
+        app:layout_constraintTop_toBottomOf="@id/txtView_title_sum_isPaid_paidAct" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyClerView_paidAct"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/standard_margin_views8"
+        android:layout_marginBottom="@dimen/standard_margin_views8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtView_title_sum_isntPaid_paidAct" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

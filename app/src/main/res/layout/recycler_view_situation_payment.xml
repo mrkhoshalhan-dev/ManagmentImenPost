@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/standard_margin_views8"
+    android:layout_marginRight="@dimen/standard_margin_views8"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_recycler_situationPayAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consLayout_line1_recycler_situationPayAct"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/standard_margin_views16"
+            android:layout_marginLeft="@dimen/standard_margin_views16"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtView_title_code_recycler_situationPayAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="شماره: "
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_code_recycler_situationPayAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="123456789"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_code_recycler_situationPayAct"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_title_price_recycler_situationPayAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="مبلغ: "
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/txtView_price_recycler_situationPayAct"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_price_recycler_situationPayAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|left"
+                android:text="2.500.000"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/txtView_toman_price_recycler_situationPayAct"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_toman_price_recycler_situationPayAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/standard_margin_views4"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:gravity="center|left"
+                android:text=" تومان "
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_title_sender_recycler_situationPayAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="فرستنده: "
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_code_recycler_situationPayAct" />
+
+            <TextView
+                android:id="@+id/txtView_sender_recycler_situationPayAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|left"
+                android:text="کردستان سنندج - جمیل غریبی"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_sender_recycler_situationPayAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_code_recycler_situationPayAct" />
+            <TextView
+                android:id="@+id/txtView_title_receiver_recycler_situationPayAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="گیرنده: "
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_sender_recycler_situationPayAct" />
+
+            <TextView
+                android:id="@+id/txtView_receiver_recycler_situationPayAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|left"
+                android:text="گرگان - فرهاد خوش الحن"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_receiver_recycler_situationPayAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_sender_recycler_situationPayAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_content_recycler_situationPayAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="مرسوله: "
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_receiver_recycler_situationPayAct" />
+
+            <TextView
+                android:id="@+id/txtView_content_recycler_situationPayAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|left"
+                android:text="کتاب"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_content_recycler_situationPayAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_receiver_recycler_situationPayAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_date_recycler_situationPayAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="تاریخ ثبت: "
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_content_recycler_situationPayAct" />
+
+            <TextView
+                android:id="@+id/txtView_date_recycler_situationPayAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|left"
+                android:text="1399.10.12"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_date_recycler_situationPayAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_content_recycler_situationPayAct" />
+
+            <TextView
+                android:id="@+id/txtView_isPay_recycler_situationPayAct"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_margin_views32"
+                android:text="پرداخت شده"
+                android:textSize="15sp"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:textColor="@color/Red"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_date_recycler_situationPayAct"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_margin_views8"
+                app:layout_constraintTop_toBottomOf="@id/txtView_isPay_recycler_situationPayAct" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_margin_views8"
+        app:layout_constraintTop_toBottomOf="@id/card_recycler_situationPayAct" />
+</androidx.constraintlayout.widget.ConstraintLayout>

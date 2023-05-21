@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/standard_margin_views8"
+    android:layout_marginRight="@dimen/standard_margin_views8"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_frgDocument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consLayout_line1_recycler_situationPayAct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin_views16"
+            android:layout_marginRight="@dimen/standard_margin_views16">
+
+            <TextView
+                android:id="@+id/txtView_title_type_post_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="نوع پست: "
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_type_post_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="post"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_type_post_recycler_ticket"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_title_value_ware_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="ارزش: "
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/txtView_value_ware_recycler_ticket"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_value_ware_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|left"
+                android:text="2.500.000"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/txtView_rial_value_ware_recycler_ticket"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_rial_value_ware_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|left"
+                android:text=" تومان "
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_title_service_type_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/standard_margin_views8"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="نوع سرویس: "
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_type_post_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_service_type_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|left"
+                android:text="service"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_service_type_recycler_ticket"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_type_post_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_title_weight_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="وزن (kg): "
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_service_type_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_weight_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:gravity="center|left"
+                android:text="weight"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_weight_recycler_ticket"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_service_type_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_title_length_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views4"
+                android:gravity="center|right"
+                android:text="طول(cm): "
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_weight_recycler_ticket"
+                app:layout_constraintTop_toBottomOf="@+id/txtView_title_service_type_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_length_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:gravity="center|left"
+                android:text="10"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_length_recycler_ticket"
+                app:layout_constraintTop_toBottomOf="@+id/txtView_title_service_type_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_title_horizontal_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views4"
+                android:gravity="center|right"
+                android:text="ارتفاع(cm)"
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_length_recycler_ticket"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_service_type_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_horizontal_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:gravity="center|left"
+                android:text="10"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_horizontal_recycler_ticket"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_service_type_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_title_vertical_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views4"
+                android:gravity="center|right"
+                android:text="عرض(cm)"
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_horizontal_recycler_ticket"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_service_type_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_vertical_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:gravity="center|left"
+                android:text="10"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_vertical_recycler_ticket"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_service_type_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_title_content_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="محتویات: "
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_weight_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_content_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="کتاب"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_content_recycler_ticket"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_weight_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_title_create_date_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="تاریخ : "
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/txtView_create_date_recycler_ticket"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_weight_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_create_date_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:gravity="center|left"
+                android:text="2.500.000"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_weight_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_num_ticket_recycler_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/standard_margin_views8"
+                android:layout_marginBottom="@dimen/standard_margin_views8"
+                android:gravity="center|right"
+                android:text="5"
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <Button
+                android:id="@+id/btn_details_recycler_ticket"
+                style="@style/Button_Style"
+                android:layout_width="140dp"
+                android:layout_height="32dp"
+                android:text="جزییات"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_content_recycler_ticket" />
+
+            <TextView
+                android:id="@+id/txtView_isPay_recycler_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_margin_views32"
+                android:layout_marginTop="@dimen/standard_margin_views8"
+                android:gravity="center"
+                android:text="پرداخت شده"
+                android:textColor="@color/Red"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_horizontal_recycler_ticket" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_margin_views8"
+                app:layout_constraintTop_toBottomOf="@id/btn_details_recycler_ticket" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_margin_views8"
+        app:layout_constraintTop_toBottomOf="@id/card_frgDocument" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/White"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="32dp"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="ImenPostManagement"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_users_mainAct"
+        style="@style/Button_Style"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_margin="8dp"
+        android:text="مشاهده کاربران"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_marsolat_mainAct"
+        style="@style/Button_Style"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_margin="8dp"
+        android:text="لیست مرسولات" />
+
+    <Button
+        android:id="@+id/btn_viewGraphAllUser_mainAct"
+        style="@style/Button_Style"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_margin="8dp"
+        android:text="آمار پرداختی ها" />
+
+    <Button
+        android:id="@+id/btn_viewEditTariff_mainAct"
+        style="@style/Button_Style"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_margin="8dp"
+        android:text="ویرایش نرخ کرایه" />
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.UsersActivity">
+
+    <EditText
+        android:id="@+id/editText_name_usersAct"
+        style="@style/EditText_Style_SingleLine"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/standard_margin_views32"
+        android:layout_marginTop="@dimen/standard_margin_views32"
+        android:layout_marginRight="@dimen/standard_margin_views8"
+        android:hint="نام کاربر"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtText_phone_signUpAct"
+        style="@style/EditText_Style_SingleLine"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/standard_margin_views32"
+        android:layout_marginTop="@dimen/standard_margin_views32"
+        android:layout_marginRight="@dimen/standard_margin_views8"
+        android:hint="موبایل"
+        android:inputType="number"
+        app:layout_constraintRight_toLeftOf="@id/editText_name_usersAct"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_search_userAct"
+        style="@style/Button_Style"
+        android:layout_width="60dp"
+        android:layout_height="@dimen/standard_margin_views32"
+        android:layout_marginTop="@dimen/standard_margin_views32"
+        android:text="جستجو"
+        app:layout_constraintBottom_toBottomOf="@id/edtText_phone_signUpAct"
+        app:layout_constraintRight_toLeftOf="@id/edtText_phone_signUpAct"
+        app:layout_constraintTop_toTopOf="@id/edtText_phone_signUpAct" />
+
+    <TextView
+        android:id="@+id/txtV_input_from_userAct"
+        style="@style/EditText_Style_SingleLine"
+        android:layout_width="95dp"
+        android:layout_height="@dimen/standard_margin_views32"
+        android:layout_marginTop="@dimen/standard_margin_views16"
+        android:layout_marginRight="@dimen/standard_margin_views8"
+        android:hint="انتخاب تاریخ از"
+        android:padding="@dimen/standard_margin_views4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_name_usersAct" />
+
+    <TextView
+        android:id="@+id/txt_to_userAct"
+        style="@style/EditText_Style_SingleLine"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/standard_margin_views32"
+        android:layout_marginRight="@dimen/standard_margin_views4"
+        android:padding="@dimen/standard_margin_views4"
+        android:text=" الی "
+        app:layout_constraintBottom_toBottomOf="@id/txtV_input_from_userAct"
+        app:layout_constraintRight_toLeftOf="@id/txtV_input_from_userAct"
+        app:layout_constraintTop_toTopOf="@id/txtV_input_from_userAct" />
+
+    <TextView
+        android:id="@+id/txtV_input_to_userAct"
+        style="@style/EditText_Style_SingleLine"
+        android:layout_width="95dp"
+        android:layout_height="@dimen/standard_margin_views32"
+        android:layout_marginRight="@dimen/standard_margin_views4"
+        android:hint=" تا تاریخ "
+        android:padding="@dimen/standard_margin_views4"
+        app:layout_constraintBottom_toBottomOf="@id/txt_to_userAct"
+        app:layout_constraintRight_toLeftOf="@id/txt_to_userAct"
+        app:layout_constraintTop_toTopOf="@id/txt_to_userAct" />
+    <Button
+        android:id="@+id/btn_searchGraph_userAct"
+        style="@style/Button_Style"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/standard_margin_views32"
+        android:padding="@dimen/standard_margin_views4"
+        android:text="جستجو"
+        app:layout_constraintTop_toBottomOf="@id/editText_name_usersAct"
+        app:layout_constraintRight_toLeftOf="@id/txtV_input_to_userAct"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart_mySense_userAct"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_margin="@dimen/standard_margin_views8"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/txtV_input_from_userAct" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_userAct"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/standard_margin_views16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtV_input_from_userAct" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
